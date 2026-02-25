@@ -10,6 +10,8 @@ This project analyzes personal job application data to understand trends in appl
 
 ## Files of Project
 - `data/job-application-dataset-2025.csv`: the cleaned dataset from my Excel job tracker
+- `data/job_applications.db`: the database created from `data/job-application-dataset-2025.csv` via DB Browser for SQLite
+- `sql/analysis.sql`: initial SQL queries to practice 
 
 ## Dataset
 The dataset includes the following columns:
