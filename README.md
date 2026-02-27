@@ -1,12 +1,6 @@
 # Job Application Data Analysis
 A data analysis project exploring job application trends, response rates, and hiring outcomes to improve job search strategy using Python and visualization tools.
 
-## Table of Contents
-- [Project Overview](##project-overview)
-- [Files of Project](##files-of-project)
-- [Dataset](##dataset)
-- [Tools and Languages](##tools-and-languages)
-
 ## Project Overview
 This project analyzes personal job application data to understand trends in application platforms, role types (tech vs non-tech), and hiring outcomes.
 </br>
