@@ -7,9 +7,9 @@ This project analyzes personal job application data to understand trends in appl
 </br>The goal is to practice data analysis skills using real-world data and generate insights that can improve job search strategy.
 
 ## Files of Project
-- `data/job-application-dataset-2025.csv`: the cleaned dataset from my Excel job tracker
-- `data/job_applications.db`: the database created from `data/job-application-dataset-2025.csv` via DB Browser for SQLite
-- `sql/analysis.sql`: initial SQL queries to practice 
+- `data/`: contains both CSV and db verions of the cleaned data set
+- `exports/`: contains results of queries from `sql/analysis.sql`
+- `sql/analysis.sql`: SQL queries for practice and to generate CSVs
 
 ## Dataset
 The dataset includes the following columns:
@@ -20,6 +20,5 @@ The dataset includes the following columns:
 - Status (Applied, Interviewed, Rejected, Offer)
 
 ## Tools and Languages
-- Python (pandas, matplotlib)
+- Python (pandas, matplotlib) & Jupyter Notebook
 - SQL (DB Browser for SQLite)
-- Jupyter Notebook
