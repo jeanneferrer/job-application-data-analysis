@@ -18,6 +18,10 @@ The dataset includes the following columns:
 - Type (Tech / Non-Tech)
 - Via What (Cold Email, Website Application, Job Board Listing)
 - Status (Applied, Interviewed, Rejected, Offer)
+### To Add
+- Application Date (Backtrack via resume PDF creation date)
+- Interview Date (Backtrack via email or Indeed/LinkedIn)
+- Rejection Date (Backtrack via email or Indeed/LinkedIn) 
 
 ## Tools and Languages
 - Python (pandas, matplotlib) & Jupyter Notebook
