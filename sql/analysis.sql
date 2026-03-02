@@ -15,6 +15,8 @@ SELECT is_tech AS "Tech or Non-Tech", COUNT(*) AS "Number of Applications"
 -- Response Rate = use CASE for 
 SELECT status, COUNT(*) AS "Number of Applications"
 	FROM my_applications
-	GROUP BY status;
+	GROUP BY status; -- add percentage
 
 -- Interview Rate
+
+-- Applications Over Time (check date of pdf resume creation for reference)
