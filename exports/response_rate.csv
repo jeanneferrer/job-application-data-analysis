@@ -1,7 +1,8 @@
-status,Number of Applications
+status,no_of_applications
 Applied,85
 Ghosted,12
-Not Interested Anymore,8
-OFFER!!!!,2
-Rejected (App),48
+Rejected (App),47
+Not Interested (App),5
+Not Interested (Interview Offer),4
 Rejected (Interview),4
+OFFER!!!!,2

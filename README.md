@@ -7,17 +7,17 @@ This project analyzes personal job application data to understand trends in appl
 </br>The goal is to practice data analysis skills using real-world data and generate insights that can improve job search strategy.
 
 ## Files of Project
-- `data/`: contains both CSV and db verions of the cleaned data set
+- `data/`: contains both CSV and db verions of the initial cleaned data set
 - `exports/`: contains results of queries from `sql/analysis.sql`
 - `sql/analysis.sql`: SQL queries for practice and to generate CSVs
 
 ## Dataset
-The dataset includes the following columns:
+The initial dataset includes the following columns:
 - Company
 - Specific Role
-- Type (Tech / Non-Tech)
-- Via What (Cold Email, Website Application, Job Board Listing)
-- Status (Applied, Interviewed, Rejected, Offer)
+- Type: Tech or Non-Tech
+- Via What: Cold Email, Website Application, Job Board Listing
+- Status: Applied, Ghosted, Rejected (App), Rejected (Interview), Not Interested (App), Not Interested (Interview Offer), OFFER!!!!
 ### To Add
 - Application Date (Backtrack via resume PDF creation date)
 - Interview Date (Backtrack via email or Indeed/LinkedIn)

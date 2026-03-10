@@ -1,10 +1,10 @@
-ï»¿company,specific_role,platform,status,is_tech
+COMPANY,SPECIFIC ROLE,VIA WHAT,STATUS,TYPE
 Insight Global,Project Coordinator,Job Board Listing,Ghosted,Non-Tech
 Agilus,Help Desk Administrator,Website Application,Applied,Non-Tech
 DanCar Industrial,Remote Records Clerk,Job Board Listing,Applied,Non-Tech
 Sunstone Chartered,Office Administrator,Job Board Listing,Rejected (App),Non-Tech
 Baan Thai Massage,Medical Office Administrator,Job Board Listing,Rejected (App),Non-Tech
-Second HarvestÂ ,National Volunteer Engagement Coordinator,Website Application,Rejected (App),Non-Tech
+Second HarvestÊ,National Volunteer Engagement Coordinator,Website Application,Rejected (App),Non-Tech
 Dental Management Secrets,Administrative Assistant,Job Board Listing,Rejected (App),Non-Tech
 Rossi Financial Inc.,Part Time Deal Analyst Assistant,Job Board Listing,Rejected (Interview),Non-Tech
 Mount Royal University,Public Services Assistant,Website Application,Applied,Non-Tech
@@ -15,7 +15,7 @@ Petfinity,Part Time Receptionist,Job Board Listing,Applied,Non-Tech
 UNIQLO,Store Associate,Website Application,Applied,Non-Tech
 Cambridge Learning Services,Assistant Tutor Supervisor,Website Application,Rejected (App),Non-Tech
 Dental Media Corp,Bookkeeper Part Time,Job Board Listing,Rejected (App),Non-Tech
-Subway,Sandwhich Artist,Job Board Listing,Not Interested Anymore,Non-Tech
+Subway,Sandwhich Artist,Job Board Listing,Not Interested (Interview Offer),Non-Tech
 Wow chicken,Server,Job Board Listing,Applied,Non-Tech
 DEELZ Tools and Such,Retail Sales Associate,Job Board Listing,Ghosted,Non-Tech
 Safeway,Clerk Sales/Service,Website Application,Applied,Non-Tech
@@ -40,9 +40,9 @@ NCR Atleos,"Account Support Analyst - Calgary, AB",Website Application,Rejected 
 Holt Renfrew,Seasonal Associate,Website Application,Rejected (App),Non-Tech
 Mikata Health,Sales Executive Assistant,Website Application,Rejected (App),Non-Tech
 Concentrix,Technical Support Admin,Website Application,Rejected (App),Non-Tech
-Stride,Call Center Operator,Website Application,Not Interested Anymore,Non-Tech
+Stride,Call Center Operator,Website Application,Not Interested (Interview Offer),Non-Tech
 Bow Valley College,Project Assistant - Sales & Workforce Solutions (casual),Website Application,Applied,Non-Tech
-Enverus,Customer Application Support Analyst,Website Application,Not Interested Anymore,Non-Tech
+Enverus,Customer Application Support Analyst,Website Application,Not Interested (App),Non-Tech
 RnR Hot Tubs and Spa,Retail Operations Administrator,Cold Email,Ghosted,Non-Tech
 Critical Mass,Administrative Assistant,Website Application,Rejected (App),Non-Tech
 Rectangle,-,Cold Email,Applied,Non-Tech
@@ -57,7 +57,7 @@ SAIT,Administrative Assistant I,Website Application,Applied,Non-Tech
 Real Canadian Superstore,Salad Bar Clerk Part Time Day,Website Application,Rejected (App),Non-Tech
 Oxford Properties Group,Seasonal Guest Experience Representative,Website Application,Rejected (App),Non-Tech
 TD,Customer Experience Associate,Website Application,Applied,Non-Tech
-Calgary French & International SchoolÂ ,Digital Marketing Associate,Website Application,Applied,Non-Tech
+Calgary French & International SchoolÊ,Digital Marketing Associate,Website Application,Applied,Non-Tech
 Neon One,Marketing Operations Specialist,Website Application,Rejected (App),Non-Tech
 Wood's Homes,Communications Coordinator,Website Application,Applied,Non-Tech
 Bluevale Capital,Project Coordinator - Real Estate,Website Application,Applied,Non-Tech
@@ -68,16 +68,16 @@ BrokerLink - RiskCan,Underwriting Assistant,Website Application,Applied,Non-Tech
 ARCH Mechanical Plumbing & Heating,administrative clerk,Cold Email,Applied,Non-Tech
 Best Access Doors,Ecommerce Specialist,Cold Email,Applied,Non-Tech
 Rokt,Operations and Support Specialist,Website Application,Rejected (App),Non-Tech
-IMS Innovative Manufacturing Source Inc.,Receiving Clerk,Job Board Listing,Not Interested Anymore,Non-Tech
+IMS Innovative Manufacturing Source Inc.,Receiving Clerk,Job Board Listing,Not Interested (Interview Offer),Non-Tech
 SunMETA,Curriculum Administration Assistant,Job Board Listing,Rejected (Interview),Non-Tech
 Procom,Project Clerk/Business Analyst,Job Board Listing,Applied,Non-Tech
-Greenfox Windows and Doors,Order Desk Clerk,Job Board Listing,Not Interested Anymore,Non-Tech
+Greenfox Windows and Doors,Order Desk Clerk,Job Board Listing,Not Interested (App),Non-Tech
 Mount Royal University,Records Evaluator,Website Application,Applied,Non-Tech
 First Aid Training Calgary,Training Administrator and Instructor Trainee,Cold Email,Applied,Non-Tech
 MaKami College,Online Programs - Learning Assistant,Website Application,Applied,Non-Tech
 Evans,Project Coordinator,Website Application,Applied,Non-Tech
 Litco Law,Records and Information Analyst,Website Application,Rejected (App),Non-Tech
-EnbridgeÂ ,Administrative Assistant,Job Board Listing,Rejected (App),Non-Tech
+EnbridgeÊ,Administrative Assistant,Job Board Listing,Rejected (App),Non-Tech
 Sundine Produce,Administrative Assistant,Cold Email,Applied,Non-Tech
 Shoppers Drug Mart,Post Office Clerk,Website Application,Rejected (App),Non-Tech
 NuHome,Personal Assistant,Job Board Listing,Rejected (App),Non-Tech
@@ -89,36 +89,36 @@ Deloitte,Learning Coordinator,Website Application,Rejected (App),Non-Tech
 MNP,"Coordinator, Learning and Development",Website Application,Applied,Non-Tech
 Calgary TELUS Convention Centre,Client Services Coordinator - Event Execution,Website Application,Applied,Non-Tech
 Spackman Dental,Office Administrator,Website Application,Applied,Non-Tech
-iS2Â ,Health & Safety Administrator,Cold Email,Applied,Non-Tech
+iS2Ê,Health & Safety Administrator,Cold Email,Applied,Non-Tech
 Canaccord Genuity,Administrative Assistant,Website Application,Applied,Non-Tech
 Lululemon,Educator,Website Application,Rejected (App),Non-Tech
 Manpower Group North America,Receptionist,Job Board Listing,Applied,Non-Tech
 CoolIT Systems,Logistics Assistant,Website Application,Rejected (App),Non-Tech
 Randstad,Business Centre Clerk,Website Application,Applied,Non-Tech
 Altis Recruitment,Facilities Coordinator,Website Application,Applied,Non-Tech
-FCT,Document Processing Rep,Website Application,Rejected (App),Non-Tech
+FCT,Document Processing Rep,Website Application,Not Interested (Interview Offer),Non-Tech
 Calgary Catholic School District,Independent Studies Assistant,Website Application,Applied,Non-Tech
 Days Inn Calgary,Front Desk Agent,Cold Email,Applied,Non-Tech
 Tinbox Energy Software,Business Coordinator,Cold Email,Applied,Non-Tech
 Accenture,Office Operations and Hospitality Coordinator,Website Application,Applied,Non-Tech
 VCA Animal Hospitals,"Veterinary Reception, Client Care",Website Application,Applied,Non-Tech
 JD Sports Canada,Back of House Ecommerce Associate,Website Application,Applied,Non-Tech
-Karen King and AssociatesÂ ,Receptionist / Front Desk Administrator,Cold Email,OFFER!!!!,Non-Tech
+Karen King and AssociatesÊ,Receptionist / Front Desk Administrator,Cold Email,OFFER!!!!,Non-Tech
 Affirm,Administrative Assistant IV,Website Application,Rejected (App),Non-Tech
 Higher Talent Recruitment,Front Desk Specialist & Administrative Assistant,Cold Email,Applied,Non-Tech
 Perry Thompson Photography,Assistant Production Manager,Cold Email,OFFER!!!!,Non-Tech
 Terrace Gardens on Sixth,Residential Administrative Assistant,Cold Email,Rejected (App),Non-Tech
 Prep Academy Tutors,Administrative Assistant - Calgary,Cold Email,Applied,Non-Tech
-EYÂ ,2025 and 2026 Assurance - Technology Risk - Canada - Full-Time Staff,Job Board Listing,Applied,Tech
+EYÊ,2025 and 2026 Assurance - Technology Risk - Canada - Full-Time Staff,Job Board Listing,Applied,Tech
 Fiscal AI,Jr/Intermediate Full Stack & QA Engineer,Website Application,Rejected (App),Tech
 WanderLog,Full-Stack Software Engineer,Website Application,Applied,Tech
 Grafana Labs,Staff Backend Engineer - Pyroscope | Canada | Remote,Job Board Listing,Rejected (App),Tech
 JYZ Design,Website Project Manager,Job Board Listing,Rejected (App),Tech
 Fuel Labs,Talent Network,Job Board Listing,Applied,Tech
 Neo Finanial,Junior Software Developer,Job Board Listing,Applied,Tech
-MNP,Junior Developer,Job Board Listing,Not Interested Anymore,Tech
-FDM,Software Engineering Practice,Website Application,Not Interested Anymore,Tech
-Outlier,Graphics & Visual Design for AI Training,Website Application,Not Interested Anymore,Tech
+MNP,Junior Developer,Job Board Listing,Not Interested (App),Tech
+FDM,Software Engineering Practice,Website Application,Not Interested (App),Tech
+Outlier,Graphics & Visual Design for AI Training,Website Application,Not Interested (App),Tech
 Helic & Co.,Data Analyst,Job Board Listing,Applied,Tech
 micro1,Full-stack Engineer,Job Board Listing,Rejected (App),Tech
 Tuba H. post,IT Roles,Job Board Listing,Applied,Tech
@@ -127,18 +127,18 @@ Founding Teams,Junior Machine Learning Engineer - AI startup,Job Board Listing,G
 Suraj Post,Freelance Dev/Software Eng,Job Board Listing,Applied,Tech
 Erode Ai,Machine Learning Research Engr,Job Board Listing,Rejected (App),Tech
 Actalent,Full Stack Software Developer,Job Board Listing,Applied,Tech
-Meta,Data Labeling Analyst IIÂ (Contract),Website Application,Rejected (App),Tech
+Meta,Data Labeling Analyst IIÊ(Contract),Website Application,Rejected (App),Tech
 visorPro,Python Dev,Job Board Listing,Ghosted,Tech
 Luminara Creative,Junior Web Designer,Job Board Listing,Rejected (Interview),Tech
 Parvathi,IT Roles,Job Board Listing,Applied,Tech
-VictoriaÂ ,Data Scientist,Job Board Listing,Applied,Tech
+VictoriaÊ,Data Scientist,Job Board Listing,Applied,Tech
 Autodesk,Software Developer,Website Application,Rejected (App),Tech
 VantEDGE,Intermediate Software Developer,Job Board Listing,Ghosted,Tech
 SI Systems Inc,Jr. Service Desk Analyst,Website Application,Rejected (App),Tech
 Micro Engineering Tech Inc,Full Time Information System Analyst,Website Application,Ghosted,Tech
 C0wsec Information Security Association,Entry-Level Customer Support Specialist,Website Application,Ghosted,Tech
 Job Bank by Government of Canada,Web Designer,Job Board Listing,Applied,Tech
-CloudBerry,Jr Software EngineerÂ ,Job Board Listing,Rejected (App),Tech
+CloudBerry,Jr Software EngineerÊ,Job Board Listing,Rejected (App),Tech
 Job Bank by Government of Canada,Web Developer,Job Board Listing,Applied,Tech
 Tech Consulting,Jr Data Science,Job Board Listing,Ghosted,Tech
 Mindrift,AI Agent Evaluation Analyst,Website Application,Applied,Tech
