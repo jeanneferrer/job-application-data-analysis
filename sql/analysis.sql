@@ -5,7 +5,7 @@
 -- Total rows/applications
 SELECT COUNT(*) AS "total_applications" FROM my_applications;
 
--- Unique Platforms (initial query, expand dataset)
+-- Unique Platforms (will have to expand dataset, specific platform instead of "Job Board Listing")
 SELECT platform FROM my_applications GROUP BY platform;
 
 -- Unique Statuses
@@ -43,7 +43,7 @@ SELECT platform, COUNT(*) AS "num_of_applications"
 -- 3. ROLE TARGETING
 -- =====================================================
 
--- EXPORTED Tech vs non-tech totals
+-- Tech vs non-tech totals
 SELECT is_tech AS "tech_or_nontech", COUNT(*) AS "num_of_applications"
 	FROM my_applications
 	GROUP BY is_tech;
@@ -103,7 +103,7 @@ SELECT status, COUNT(*) AS "num_of_applications"
 -- offer rate relative to interviews
 
 -- =====================================================
--- 7. HIRING FUNNEL
+-- 7. HIRING FUNNEL (TO BE EXPORTED)
 -- =====================================================
 
 -- total applications
@@ -112,7 +112,7 @@ SELECT status, COUNT(*) AS "num_of_applications"
 -- offers
 
 -- =====================================================
--- 8. TIME ANALYSIS (LATER, WILL HAVE TO REDO DATASET)
+-- 8. TIME ANALYSIS (LATER, WILL HAVE TO EXPAND DATASET, TO BE EXPORTED)
 -- =====================================================
 
 -- applications per month
