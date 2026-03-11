@@ -1,4 +1,15 @@
 -- =====================================================
+-- JOB APPLICATION DATA ANALYSIS
+-- Author: Jeanne Ferrer
+-- Database: job_applications.db
+-- Table: my_applications
+--
+-- This file contains exploratory and analytical SQL
+-- queries used to understand job application trends,
+-- response rates, and hiring outcomes.
+-- =====================================================
+
+-- =====================================================
 -- 1. DATASET OVERVIEW
 -- =====================================================
 
@@ -6,12 +17,12 @@
 SELECT COUNT(*) AS "total_applications" FROM my_applications;
 
 -- Unique Platforms (will have to expand dataset, specific platform instead of "Job Board Listing")
-SELECT platform FROM my_applications GROUP BY platform;
+SELECT DISTINCT platform FROM my_applications;
 
 -- Unique Statuses
-SELECT status FROM my_applications GROUP BY status;
+SELECT DISTINCT status FROM my_applications;
 
--- Tech vs Non-Tech Distribution
+-- Tech vs Non-Tech Inspection
 SELECT company, specific_role FROM my_applications WHERE is_tech = "Tech" ORDER BY specific_role;
 SELECT company, specific_role FROM my_applications WHERE is_tech = "Non-Tech" ORDER BY specific_role;
 
@@ -24,7 +35,7 @@ SELECT platform, COUNT(*) AS "num_of_applications"
 	FROM my_applications
 	GROUP BY platform;
 
--- EXPORTED Applications per platform w/ tech split
+-- EXPORT: Applications per platform w/ tech split
 SELECT platform, COUNT(*) AS "num_of_applications", 
 	SUM(CASE WHEN is_tech == "Tech" THEN 1 ELSE 0 END) AS "num_of_tech",
 	SUM(CASE WHEN is_tech == "Non-Tech" THEN 1 ELSE 0 END) AS "num_of_nontech"
@@ -56,7 +67,7 @@ SELECT is_tech AS "tech_or_nontech", COUNT(*) AS "num_of_applications"
 -- 4. RESPONSE ANALYSIS
 -- =====================================================
 
--- EXPORTED Count per status
+-- EXPORT: Count per status
 SELECT status, COUNT(*) AS "no_of_applications"
 	FROM my_applications
 	GROUP BY status
@@ -83,7 +94,7 @@ SELECT status, COUNT(*) AS "no_of_applications"
 -- Interview-related statuses
 SELECT status, COUNT(*) AS "num_of_applications"
 	FROM my_applications
-	WHERE status = "Rejected (Interview)" OR status = "OFFER!!!!" OR status = "Not Interested (Interview Offer)"
+	WHERE status IN ("Rejected (Interview)", "OFFER!!!!", "Not Interested (Interview Offer)")
 	GROUP BY status;
 
 -- interview rate overall
