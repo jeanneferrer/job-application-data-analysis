@@ -82,6 +82,11 @@ SELECT status, COUNT(*) AS "no_of_applications"
 		END; 
 
 -- response vs no-response categories
+SELECT 
+	(SELECT COUNT(*) FROM my_applications WHERE status 
+		IN ("Not Interested (Interview Offer)", "Rejected (App)", "Rejected (Interview)", "OFFER!!!!")) AS "response",
+	(SELECT COUNT(*) AS "no_response_count" FROM my_applications WHERE status 
+		IN ("Applied", "Ghosted")) AS "no_response";
 
 -- response rate overall
 
