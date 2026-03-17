@@ -26,3 +26,5 @@ The initial dataset includes the following columns:
 ## Tools and Languages
 - Python (pandas, matplotlib) & Jupyter Notebook
 - SQL (DB Browser for SQLite)
+- HTML/CSS/JS
+- Chart.js
