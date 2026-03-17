@@ -1,0 +1,8 @@
+platform,response_rate,no_response_rate
+Cold Email,0.12,0.88
+Company Website/Platform,0.397590361445783,0.566265060240964
+Glassdoor,0.375,0.5
+Indeed,0.733333333333333,0.266666666666667
+Job Bank,0.0,1.0
+LinkedIn,0.25,0.7
+Other Job Board,0.333333333333333,0.666666666666667

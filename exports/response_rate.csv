@@ -1,8 +1,2 @@
-status,no_of_applications
-Applied,85
-Ghosted,12
-Rejected (App),47
-Not Interested (App),5
-Not Interested (Interview Offer),4
-Rejected (Interview),4
-OFFER!!!!,2
+response_rate,no_response_rate
+0.358490566037736,0.610062893081761

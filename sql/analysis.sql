@@ -67,7 +67,7 @@ SELECT is_tech AS "tech_or_nontech", COUNT(*) AS "num_of_applications"
 -- 4. RESPONSE ANALYSIS
 -- =====================================================
 
--- EXPORT: Count per status
+-- Count per status
 SELECT status, COUNT(*) AS "no_of_applications"
 	FROM my_applications
 	GROUP BY status
@@ -88,9 +88,22 @@ SELECT
 	(SELECT COUNT(*) AS "no_response_count" FROM my_applications WHERE status 
 		IN ("Applied", "Ghosted")) AS "no_response";
 
--- response rate overall
+-- EXPORT: response rate overall
+SELECT 
+	((SELECT COUNT(*) FROM my_applications WHERE status 
+		IN ("Not Interested (Interview Offer)", "Rejected (App)", "Rejected (Interview)", "OFFER!!!!"))) * 1.0 /(SELECT COUNT(*) FROM my_applications) AS "response_rate",
+	((SELECT COUNT(*) AS "no_response_count" FROM my_applications WHERE status 
+		IN ("Applied", "Ghosted"))) * 1.0 /(SELECT COUNT(*) FROM my_applications) AS "no_response_rate";
 
--- response rate per platform
+-- EXPORT: response rate per platform
+SELECT
+	platform,
+	((SELECT COUNT(*) FROM my_applications AS sub WHERE sub.platform = my_applications.platform AND sub.status 
+		IN ("Not Interested (Interview Offer)", "Rejected (App)", "Rejected (Interview)", "OFFER!!!!"))) * 1.0 /(SELECT COUNT(*) FROM my_applications AS sub2 WHERE sub2.platform = my_applications.platform) AS "response_rate",
+	((SELECT COUNT(*) AS "no_response_count" FROM my_applications AS sub3 WHERE sub3.platform = my_applications.platform AND sub3.status 
+		IN ("Applied", "Ghosted"))) * 1.0 /(SELECT COUNT(*) FROM my_applications AS sub4 WHERE sub4.platform = my_applications.platform) AS "no_response_rate"
+	FROM my_applications
+	GROUP BY platform;
 
 -- =====================================================
 -- 5. INTERVIEW ANALYSIS
@@ -102,9 +115,18 @@ SELECT status, COUNT(*) AS "num_of_applications"
 	WHERE status IN ("Rejected (Interview)", "OFFER!!!!", "Not Interested (Interview Offer)")
 	GROUP BY status;
 
--- interview rate overall
+-- EXPORT: interview rate overall
+SELECT
+	((SELECT COUNT(*) FROM my_applications WHERE status 
+		IN ("Rejected (Interview)", "OFFER!!!!", "Not Interested (Interview Offer)"))) * 1.0 /(SELECT COUNT(*) FROM my_applications) AS "interview_rate";
 
 -- interview rate per platform
+SELECT
+	platform,
+	((SELECT COUNT(*) FROM my_applications AS sub WHERE sub.platform = my_applications.platform AND sub.status 
+		IN ("Rejected (Interview)", "OFFER!!!!", "Not Interested (Interview Offer)"))) * 1.0 /(SELECT COUNT(*) FROM my_applications AS sub2 WHERE sub2.platform = my_applications.platform) AS "interview_rate"
+	FROM my_applications
+	GROUP BY platform;
 
 -- interview outcomes
 
@@ -114,18 +136,37 @@ SELECT status, COUNT(*) AS "num_of_applications"
 
 -- offer counts
 
--- offer rate overall
+-- EXPORT: offer rate overall
+SELECT
+	((SELECT COUNT(*) FROM my_applications WHERE status 
+		IN ("OFFER!!!!"))) * 1.0 /(SELECT COUNT(*) FROM my_applications) AS "offer_rate";
 
 -- offer rate relative to interviews
+SELECT
+	((SELECT COUNT(*) FROM my_applications WHERE status 
+		IN ("OFFER!!!!"))) * 1.0 /(SELECT COUNT(*) FROM my_applications WHERE status 
+		IN ("Rejected (Interview)", "OFFER!!!!", "Not Interested (Interview Offer)")) AS "offer_to_interview_rate";
 
 -- =====================================================
--- 7. HIRING FUNNEL (TO BE EXPORTED)
+-- 7. HIRING FUNNEL
 -- =====================================================
 
 -- total applications
 -- responses
 -- interviews
 -- offers
+
+-- EXPORT: hiring funnel
+SELECT "Applied" AS "stage", COUNT(*) AS "count" FROM my_applications
+UNION ALL
+SELECT "Response" AS "stage", COUNT(*) AS "count" FROM my_applications WHERE status 
+	IN ("Not Interested (Interview Offer)", "Rejected (App)", "Rejected (Interview)", "OFFER!!!!")
+UNION ALL
+SELECT "Interview" AS "stage", COUNT(*) AS "count" FROM my_applications WHERE status 
+	IN ("Rejected (Interview)", "OFFER!!!!", "Not Interested (Interview Offer)")
+UNION ALL
+SELECT "Offer" AS "stage", COUNT(*) AS "count" FROM my_applications WHERE status 
+	IN ("OFFER!!!!");
 
 -- =====================================================
 -- 8. TIME ANALYSIS (LATER, WILL HAVE TO EXPAND DATASET, TO BE EXPORTED)
