@@ -16,7 +16,7 @@ The initial dataset includes the following columns:
 - Company
 - Specific Role
 - Type: Tech or Non-Tech
-- Via What: Cold Email, Website Application, Job Board Listing
+- Via What: Cold Email, Website Application, Specific Job Board
 - Status: Applied, Ghosted, Rejected (App), Rejected (Interview), Not Interested (App), Not Interested (Interview Offer), OFFER!!!!
 ### To Add
 - Application Date (Backtrack via resume PDF creation date)
@@ -24,7 +24,7 @@ The initial dataset includes the following columns:
 - Rejection Date (Backtrack via email or Indeed/LinkedIn) 
 
 ## Tools and Languages
-- Python (pandas, matplotlib) & Jupyter Notebook
+- Python
 - SQL (DB Browser for SQLite)
 - HTML/CSS/JS
 - Chart.js
