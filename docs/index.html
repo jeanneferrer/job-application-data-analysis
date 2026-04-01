@@ -1,27 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job App Dashboard</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adi's Job Dashboard</title>
+  <!-- TODO: add icon for the tab -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav></nav>
-    </header>
-    <main>
-        <h1>Adi's Job Application Dashboard</h1>
 
-        <div id="kpis">
-        <div>Total Applications: </div>
-        <div>Interview Rate: </div>
-        <div>Offer Rate: </div>
-        </div>
+<header>
+  <div class="logo"><!-- TODO: insert logo or placeholder name --></div>
+  <div class="header-meta"> &nbsp;·&nbsp; 159 applications tracked</div>
+  <!-- add a nav -->
+</header>
 
-        <canvas id="applicationPerPlatformChart"></canvas>
-    </main>
+<main>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="main.js"></script>
+  <h1 class="page-title">Adi's Application Dashboard</h1>
+  <p class="page-subtitle">A summary of job search performance across platforms and stages</p>
+
+  <!-- KPIs -->
+  <div class="section-label">Key Metrics</div>
+  <div class="kpi-grid">
+    <div class="kpi-card fade-in">
+      <div class="kpi-label">Total Applications</div>
+      <div class="kpi-value" id="kpi-total">—</div>
+      <div class="kpi-sub">Across all platforms</div>
+    </div>
+    <div class="kpi-card mid fade-in">
+      <div class="kpi-label">Response Rate</div>
+      <div class="kpi-value" id="kpi-response">—</div>
+      <div class="kpi-sub" id="kpi-response-sub"></div>
+    </div>
+    <div class="kpi-card gold fade-in">
+      <div class="kpi-label">Interview Rate</div>
+      <div class="kpi-value" id="kpi-interview">—</div>
+      <div class="kpi-sub" id="kpi-interview-sub"></div>
+    </div>
+    <div class="kpi-card warn fade-in">
+      <div class="kpi-label">Offer Rate</div>
+      <div class="kpi-value" id="kpi-offer">—</div>
+      <div class="kpi-sub" id="kpi-offer-sub"></div>
+    </div>
+  </div>
+
+  <!-- Row 1: Funnel + Platform Donut -->
+  <div class="section-label">Pipeline &amp; Platform Breakdown</div>
+  <div class="chart-grid-3">
+    <div class="chart-card">
+      <div class="chart-title">Hiring Funnel</div>
+      <div class="chart-desc">Drop-off at each stage of the application process</div>
+      <div class="funnel" id="funnelChart"></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">By Platform</div>
+      <div class="chart-desc">Share of total applications</div>
+      <!-- <div class="chart-wrap" style="height:220px;">
+        <canvas id="platformDonut"></canvas>
+      </div> -->
+    </div>
+  </div>
+
+  <!-- Row 2: Grouped bar + Response table -->
+  <div class="section-label">Platform Details</div>
+  <div class="chart-grid-2">
+    <div class="chart-card">
+      <div class="chart-title">Applications per Platform</div>
+      <div class="chart-desc">Tech vs. non-tech split by source</div>
+      <!-- <div class="chart-wrap" style="height:260px;">
+        <canvas id="platformBar"></canvas>
+      </div> -->
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">Response Rate by Platform</div>
+      <div class="chart-desc">How often each source led to a response</div>
+      <table class="response-table" id="responseTable"></table>
+    </div>
+  </div>
+
+  <!-- Row 3: Response donuts + horizontal bar -->
+  <div class="section-label">Response Breakdown</div>
+  <div class="chart-grid-2">
+    <div class="chart-card">
+      <div class="chart-title">Overall Response Split</div>
+      <div class="chart-desc">Responded vs. no response across all applications</div>
+      <div class="chart-wrap" style="height:240px;">
+        <canvas id="responseDonut"></canvas>
+      </div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">Platform Response Rates</div>
+      <div class="chart-desc">Colour-coded by performance level</div>
+      <div class="chart-wrap" style="height:240px;">
+        <canvas id="responseBar"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+  <footer>Built with Chart.js &nbsp;·&nbsp; © 2026 <a href="https://github.com/jeanneferrer" target="_blank">Jeanne Ferrer</a></footer>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
