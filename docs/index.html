@@ -12,7 +12,19 @@
 
 <header>
   <div class="header-meta">Adi's Application Dashboard &nbsp;·&nbsp; 159 applications tracked</div>
-  <nav><!-- TODO: Nav --></nav>
+  <div class="mobile-menu-container">
+
+  </div>
+  <nav class="dashboard-nav">
+    <!-- TODO: Mobile Menu Button --> <button class="mobile-menu-button" id="mobileMenuButton">Menu</button>
+    <ul>
+      <li><a href="#kpiGrid">KPIs</a></li>
+      <li><a href="#funnelCharts">General Breakdown</a></li>
+      <li><a href="#platformCharts">Platforms</a></li>
+      <li><a href="#responseCharts">Responses</a></li>
+      <li><a href="#methodology">Methodology</a></li>
+    </ul>
+  </nav>
 </header>
 
 <main>
@@ -21,7 +33,7 @@
   <p class="page-subtitle">A snapshot of your job search performance across platforms and stages.</p>
 
   <!-- KPIs -->
-  <div class="section-label">Key Metrics</div>
+  <div id="kpiGrid" class="section-label">Key Metrics</div>
   <div class="kpi-grid">
     <div class="kpi-card fade-in">
       <div class="kpi-label">Total Applications</div>
@@ -46,7 +58,7 @@
   </div>
 
   <!-- Row 1: Funnel + Platform Donut -->
-  <div class="section-label">Pipeline &amp; Platform Breakdown</div>
+  <div id="funnelCharts" class="section-label">Pipeline &amp; Platform Breakdown</div>
   <div class="chart-grid-3">
     <div class="chart-card">
       <div class="chart-title">Hiring Funnel</div>
@@ -62,7 +74,7 @@
   </div>
 
   <!-- Row 2: Grouped bar + Response table -->
-  <div class="section-label">Platform Deep Dive</div>
+  <div id="platformCharts" class="section-label">Platform Deep Dive</div>
   <div class="chart-grid-2">
     <div class="chart-card">
       <div class="chart-title">Applications per Platform</div>
@@ -78,7 +90,7 @@
   </div>
 
   <!-- Row 3: Response donut + horizontal bar -->
-  <div class="section-label">Response Breakdown</div>
+  <div id="responseCharts" class="section-label">Response Breakdown</div>
   <div class="chart-grid-2">
     <div class="chart-card">
       <div class="chart-title">Overall Response Split</div>
@@ -93,6 +105,12 @@
       <div class="sum-block sum-block--cols" id="responseBarSummary"></div>
     </div>
   </div>
+
+  <!-- TODO: Methodology Paragraph -->
+  <!-- <div id="methodology" class="section-label">Methodology</div>
+  <p>
+    Lorem Ipsum
+  </p> -->
 
   <div class="divider"></div>
   <footer>Built with Chart.js &nbsp;·&nbsp; © 2026 <a href="https://github.com/jeanneferrer" target="_blank">Jeanne Ferrer</a></footer>

@@ -46,6 +46,30 @@ header {
   font-weight: 400;
 }
 
+.dashboard-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.dashboard-nav a {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.mobile-menu-button {
+  display: none;
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: var(--radius);
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
 /* ── LAYOUT ── */
 main {
   max-width: 1160px;
@@ -343,6 +367,8 @@ footer a {
 /* ── RESPONSIVE ── */
 @media (max-width: 860px) {
   header { padding: 0 20px; }
+  .mobile-menu-button { display: block; }
+  .dashboard-nav ul { display: none; }
   main { padding: 32px 16px 0; }
   .kpi-grid { grid-template-columns: repeat(2, 1fr); }
   .chart-grid-2, .chart-grid-3 { grid-template-columns: 1fr; }

@@ -31,3 +31,5 @@ The initial dataset includes the following columns:
 - SQL (DB Browser for SQLite)
 - HTML/CSS/JS
 - Chart.js
+
+## TODO: Add a simple architecture diagram
